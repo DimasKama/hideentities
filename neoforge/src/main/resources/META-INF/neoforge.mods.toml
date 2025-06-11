@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "All-Rights-Reserved"
+
+[[mods]]
+modId = "hideentities"
+version = "${version}"
+displayName = "Hide Entities"
+authors = "DimasKama"
+description = '''
+Adds keybinding to hide all entities
+'''
+logoFile = "icon.png"
+
+[[dependencies.hideentities]]
+modId = "neoforge"
+type = "required"
+versionRange = "[20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.hideentities]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.20.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "hideentities.mixins.json"

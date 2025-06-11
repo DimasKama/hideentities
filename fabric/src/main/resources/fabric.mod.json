@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "hideentities",
+  "version": "${version}",
+  "name": "Hide Entities",
+  "description": "Adds keybinding to hide all entities",
+  "authors": [
+    "DimasKama"
+  ],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/hideentities/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.dimaskama.hideentities.fabric.client.HideEntitiesFabricClient"
+    ]
+  },
+  "mixins": [
+    "hideentities.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "minecraft": ">=1.20.6",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
